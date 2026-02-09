@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navarion | Timeless Style - Coming Soon</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset generale */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0a; /* Sfondo nero profondo */
+            background-image: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 900px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        /* Stile per il Logo */
+        .logo {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            /* Leggero bagliore per far risaltare il logo scuro sullo sfondo */
+            filter: drop-shadow(0px 0px 8px rgba(255,255,255,0.05));
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: #f4f4f4;
+        }
+
+        .tagline {
+            font-size: 1rem;
+            letter-spacing: 4px;
+            color: #999;
+            margin-bottom: 60px;
+            text-transform: uppercase;
+        }
+
+        /* Etichetta di stato */
+        .status-tag {
+            display: inline-block;
+            border: 1px solid #333;
+            padding: 12px 30px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 4px;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        /* Area Contatti / Email */
+        .contact-area {
+            margin-top: 20px;
+        }
+
+        .email-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            transition: all 0.4s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+            opacity: 0.8;
+        }
+
+        .email-link:hover {
+            opacity: 1;
+            letter-spacing: 4px;
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+            color: #fff;
+        }
+
+        /* Animazione d'ingresso */
+        @keyframes fadeIn {
+            from { 
+                opacity: 0; 
+                transform: translateY(15px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        /* Adattamento per dispositivi mobili */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; letter-spacing: 5px; }
+            .logo { max-width: 240px; }
+            .tagline { font-size: 0.8rem; letter-spacing: 2px; }
+            .email-link { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="navarion logo-4.png" alt="Navarion Logo" class="logo">
+        
+        <h1>Navarion</h1>
+        <p class="tagline">Yacht Sales, Commissioning & Management</p>
+        
+        <div>
+            <span class="status-tag">Under Construction</span>
+        </div>
+
+        <div class="contact-area">
+            <a href="mailto:info@navarion.com" class="email-link">info@navarion.com</a>
+        </div>
+    </div>
+
+</body>
+</html>
